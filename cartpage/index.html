@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Search and Cart Container -->
+<section class="search-cart-container">
+    <form class="search-container">
+        <input type="search" class="control-form" placeholder="Search Products" aria-label="Search Products" />
+        <button type="submit" class="search-btn" aria-label="Search">
+            <i class="fa fa-search"></i>
+        </button>
+    </form>
+    <button class="cart-btn" id="cart-btn-modal">
+        <i class="fa fa-shopping-cart"></i> Cart (0)
+    </button>
+</section>
+
+    <header>
+        <h2>Shopping Cart</h2>
+    </header>
+
+    <main>
+        <section class="cart-shipping-container">
+            <!-- Shopping Cart -->
+            <section class="cart">
+                <article class="cart-item">
+                    <img src="images/gun(1).webp" alt="Product Main">
+                    <div class="cart-details">
+                        <h4>Ruger Mark IV 22/45 Pistol - Shield Optic Base</h4>
+                        <p>P60,383.00</p>
+                    </div>
+                    <form class="product-quantity-form">
+                        <label>Quantity</label>
+                        <input type="number" value="1" min="1">
+                    </form>
+                    <output>P60,383.00</output>
+                    <button class="remove-item"><i class="fa-solid fa-circle-xmark"></i></button>
+                </article>
+
+                <article class="cart-item">
+                    <img src="images/gun(2).webp" alt="Product Main">
+                    <div class="cart-details">
+                        <h4>Q Mini Fix 12" 5.56 Pistol With Brace</h4>
+                        <p>P53,643.00</p>
+                    </div>
+                    <form class="product-quantity-form">
+                        <label>Quantity</label>
+                        <input type="number" value="1" min="1">
+                    </form>
+                    <output>P53,643.00</output>
+                    <button class="remove-item"><i class="fa-solid fa-circle-xmark"></i></button>
+                </article>
+            </section>
+
+            <!-- Shipping Information -->
+            <aside class="shipping-info">
+                <h3>Shipping Information</h3>
+                <form>
+                    <fieldset>
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" placeholder="Address">
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" placeholder="Address 2">
+                    </fieldset>
+                    <fieldset class="location">
+                        <input type="text" placeholder="State">
+                        <input type="text" placeholder="City">
+                        <input type="text" placeholder="ZIP Code">
+                    </fieldset>
+                </form>
+
+                <h3>Order Summary</h3>
+                <p>Items: P60,383.00</p>
+                <p>Shipping Fee: $0</p>
+                <p class="total">Total Amount: <span>P60,383.00</span></p>
+
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </aside>
+        </section>
+    </main>
+
+</body>
+
+</html>
